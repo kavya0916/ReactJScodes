@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Home1 from './home';//referring home function from home.js
+import Parent from './parent';
+// below statement search for the container...just like we search
+const root = ReactDOM.createRoot(document.getElementById('container'));
+// below function is going to call the home function..Get HTML and load its container...
+// this is what we did in load function
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  
+    <><Home1 /> 
+    {/* this syntax is eventually calling home function like home() */}
+    <Parent />
+    </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
