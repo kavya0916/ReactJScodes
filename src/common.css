@@ -1,0 +1,16 @@
+.mystyle{
+    margin: 100px;
+    border: 1px solid black;
+    height: 120px;
+    padding: 10px;
+}
+.mytable{
+   width: 50%;
+}
+.mydiv{
+    text-align: -webkit-center;
+    margin-top: 50px;
+}
+.myTd{
+    text-align: center;
+}
